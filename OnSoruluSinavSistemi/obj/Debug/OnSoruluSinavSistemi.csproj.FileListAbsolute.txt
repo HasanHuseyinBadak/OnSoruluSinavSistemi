@@ -1,0 +1,8 @@
+C:\Users\DELL\Documents\GitHub\OnSoruluSinavSistemi\OnSoruluSinavSistemi\bin\Debug\OnSoruluSinavSistemi.exe.config
+C:\Users\DELL\Documents\GitHub\OnSoruluSinavSistemi\OnSoruluSinavSistemi\bin\Debug\OnSoruluSinavSistemi.exe
+C:\Users\DELL\Documents\GitHub\OnSoruluSinavSistemi\OnSoruluSinavSistemi\bin\Debug\OnSoruluSinavSistemi.pdb
+C:\Users\DELL\Documents\GitHub\OnSoruluSinavSistemi\OnSoruluSinavSistemi\obj\Debug\OnSoruluSinavSistemi.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\OnSoruluSinavSistemi\OnSoruluSinavSistemi\obj\Debug\OnSoruluSinavSistemi.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Documents\GitHub\OnSoruluSinavSistemi\OnSoruluSinavSistemi\obj\Debug\OnSoruluSinavSistemi.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\OnSoruluSinavSistemi\OnSoruluSinavSistemi\obj\Debug\OnSoruluSinavSistemi.exe
+C:\Users\DELL\Documents\GitHub\OnSoruluSinavSistemi\OnSoruluSinavSistemi\obj\Debug\OnSoruluSinavSistemi.pdb

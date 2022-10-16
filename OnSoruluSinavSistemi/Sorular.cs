@@ -13,6 +13,6 @@ namespace OnSoruluSinavSistemi
         public string islem2;  
         public string islem3;
         public string islem4;
-
+        public int secim;
     }
 }
