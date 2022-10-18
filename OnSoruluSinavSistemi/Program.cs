@@ -15,6 +15,7 @@ namespace OnSoruluSinavSistemi
             Console.WriteLine("      GENEL KÜLTÜR SINAVINA HOŞGELDİNİZ ");
             Console.WriteLine();
             sorular[0] = new Sorular();
+            sorular[0].numara = 1;
             sorular[0].soru = "Türkiye'nin Başkenti Neresidir ?";
             sorular[0].islem1 = "Elazığ";
             sorular[0].islem2 = "Eskişehir";
@@ -23,6 +24,7 @@ namespace OnSoruluSinavSistemi
             sorular[0].secim = 0;
 
             sorular[1] = new Sorular();
+            sorular[1].numara = 2;
             sorular[1].soru = "Rusya'nın Başkenti Neresidir ?";
             sorular[1].islem1 = "Dinamo Kiev";
             sorular[1].islem2 = "Moskova";
@@ -31,6 +33,7 @@ namespace OnSoruluSinavSistemi
             sorular[1].secim = 0;
 
             sorular[2] = new Sorular();
+            sorular[2].numara = 3;
             sorular[2].soru = "Fransa'nın Başkenti Neresidir ?";
             sorular[2].islem1 = "Bordeaux";
             sorular[2].islem2 = "Paris";
@@ -39,6 +42,7 @@ namespace OnSoruluSinavSistemi
             sorular[2].secim = 0;
 
             sorular[3] = new Sorular();
+            sorular[3].numara = 4;
             sorular[3].soru = "Facebook'un Kurucusu Kimdir";
             sorular[3].islem1 = "Elon Musk";
             sorular[3].islem2 = "Steve Jobs";
@@ -47,6 +51,7 @@ namespace OnSoruluSinavSistemi
             sorular[3].secim = 0;
 
             sorular[4] = new Sorular();
+            sorular[4].numara = 5;
             sorular[4].soru = "Telefonun İcadı Kime Aittir ?";
             sorular[4].islem1 = "Nicole Tesla";
             sorular[4].islem2 = "Alexander Graham Bell";
@@ -55,6 +60,7 @@ namespace OnSoruluSinavSistemi
             sorular[4].secim = 0;
 
             sorular[5] = new Sorular();
+            sorular[5].numara = 6;
             sorular[5].soru = "Selfie'nin Türkçe Anlamı Nedir ?";
             sorular[5].islem1 = "Ön Çekim";
             sorular[5].islem2 = "Yan Çekim";
@@ -63,6 +69,7 @@ namespace OnSoruluSinavSistemi
             sorular[5].secim = 0;
 
             sorular[6] = new Sorular();
+            sorular[6].numara = 7;
             sorular[6].soru = "“Sinekli Bakkal” Romanının Yazarı Aşağıdakilerden Hangisidir?";
             sorular[6].islem1 = "Reşat Nuri Güntekin";
             sorular[6].islem2 = "Halide Edip Adıvar";
@@ -71,6 +78,7 @@ namespace OnSoruluSinavSistemi
             sorular[6].secim = 0;
 
             sorular[7] = new Sorular();
+            sorular[7].numara = 8;
             sorular[7].soru = "2003 Yılında Euro Vizyon Şarkı Yarışmasında Ülkemizi Temsil Eden ve Yarışmada Birinci Gelen Sanatçımız Kimdir?";
             sorular[7].islem1 = "Grup Athena";
             sorular[7].islem2 = "Sertap Erener";
@@ -79,6 +87,7 @@ namespace OnSoruluSinavSistemi
             sorular[7].secim = 0;
 
             sorular[8] = new Sorular();
+            sorular[8].numara = 9;
             sorular[8].soru = " Mustafa Kemal Atatürk’ün Nüfusa Kayıtlı Olduğu İl Hangisidir?";
             sorular[8].islem1 = "Bursa";
             sorular[8].islem2 = "Ankara";
@@ -87,6 +96,7 @@ namespace OnSoruluSinavSistemi
             sorular[8].secim = 0;
 
             sorular[9] = new Sorular();
+            sorular[9].numara = 10;
             sorular[9].soru = "Aşağıdakilerden Hangisi Dünya Sağlık Örgütünün Kısaltılmış İsmidir?";
             sorular[9].islem1 = "Uhw";
             sorular[9].islem2 = "Unıcef";
@@ -118,19 +128,19 @@ namespace OnSoruluSinavSistemi
             Console.WriteLine("BAŞARILAR :)");
             for (int i = 0; i < sorular.Length; i++)
             {
-                Console.WriteLine($"1-) {sorular[i].soru}");
+                Console.WriteLine($"{sorular[i].numara}-) {sorular[i].soru}");
                 Console.WriteLine($"A-) {sorular[i].islem1}    B-) {sorular[i].islem2}    C-) {sorular[i].islem3}    D-) {sorular[i].islem4}");
                 Console.WriteLine();
-                if (true)
-                {
-                Console.WriteLine("Çözmek İstediğin Soruyu Tuşla");
-                secm = Convert.ToInt32(Console.ReadLine());
-                secm = sorular[i].secim ;
-                Console.WriteLine(secm);
-                }
+                secm = sorular[i].secim;
+                
 
             }
-
+            if (true)
+            {
+                Console.WriteLine("Çözmek İstediğin Soruyu Tuşla");
+                secm = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(secm);
+            }
 
         }
     }

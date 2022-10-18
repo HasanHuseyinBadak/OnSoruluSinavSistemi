@@ -8,6 +8,7 @@ namespace OnSoruluSinavSistemi
 {
     internal class Sorular
     {
+        public int numara;
         public string soru;
         public string islem1;
         public string islem2;  
