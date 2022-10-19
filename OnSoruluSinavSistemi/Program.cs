@@ -182,21 +182,15 @@ namespace OnSoruluSinavSistemi
             Console.WriteLine("BAŞARILAR :)");
             while (secm == 0)
             {
-
                 for (int i = 0; i < sorular.Length; i++)
                 {
                     Console.WriteLine($"{sorular[i].numara}-) {sorular[i].soru}");
                     Console.WriteLine($"{sorular[i].islem1s}-) {sorular[i].islem1}    {sorular[i].islem2s}-) {sorular[i].islem2}    {sorular[i].islem3s}-) {sorular[i].islem3}    {sorular[i].islem4s}-) {sorular[i].islem4}");
                     Console.WriteLine();
-
-
                 }
                 Console.WriteLine("Çözmek İstediğin Soruyu Tuşla");
                 secm = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
-
-
-
 
                 if (secm == sorular[secm - 1].numara)
                 {
@@ -204,13 +198,14 @@ namespace OnSoruluSinavSistemi
                     Console.WriteLine($"{sorular[secm - 1].islem1s}-) {sorular[secm - 1].islem1} {sorular[secm - 1].islem2s}-) {sorular[secm - 1].islem2} {sorular[secm - 1].islem3s}-) {sorular[secm - 1].islem3} {sorular[secm - 1].islem4s}-) {sorular[secm - 1].islem4}");
                     Console.WriteLine("SİZCE DOĞRU CEVAP HANGİSİ ?");
                     cevap = Console.ReadLine();
-                    string ToLower;
+                    string ToUpper;
                     Console.Clear();
+                   
                     if (cevap == sorular[secm - 1].dogruCevap)
                     {
                         puan += puanHesap;
                     }
-                    Console.WriteLine(puan);
+                   secm = 0;
                 }
 
 
