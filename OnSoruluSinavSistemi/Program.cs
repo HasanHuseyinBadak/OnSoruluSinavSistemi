@@ -207,9 +207,10 @@ namespace OnSoruluSinavSistemi
                     }
                    secm = 0;
                 }
-
+                
 
             }
+            Console.WriteLine($"Tebrikle Sınavı Tamamladınız. Aldığınız PUAN : {puan}");
 
         }
     }
