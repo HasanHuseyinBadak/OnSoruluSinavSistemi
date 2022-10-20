@@ -175,6 +175,7 @@ namespace OnSoruluSinavSistemi
             string cevap = "";
             int puan = 0;
             int puanHesap = 10;
+            
 
             Console.WriteLine($"Sayın {ogrenci.ad} GENEL KÜLTÜR SINAVINA HOŞGELDİN");
             Console.WriteLine();
@@ -187,11 +188,12 @@ namespace OnSoruluSinavSistemi
                     Console.WriteLine($"{sorular[i].numara}-) {sorular[i].soru}");
                     Console.WriteLine($"{sorular[i].islem1s}-) {sorular[i].islem1}    {sorular[i].islem2s}-) {sorular[i].islem2}    {sorular[i].islem3s}-) {sorular[i].islem3}    {sorular[i].islem4s}-) {sorular[i].islem4}");
                     Console.WriteLine();
+                    
                 }
                 Console.WriteLine("Çözmek İstediğin Soruyu Tuşla");
                 secm = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
-
+               
                 if (secm == sorular[secm - 1].numara)
                 {
                     Console.WriteLine($"{sorular[secm - 1].numara}-) {sorular[secm - 1].soru}");
@@ -205,13 +207,16 @@ namespace OnSoruluSinavSistemi
                     {
                         puan += puanHesap;
                     }
+                   
                    secm = 0;
                 }
                 
 
             }
-            Console.WriteLine($"Tebrikle Sınavı Tamamladınız. Aldığınız PUAN : {puan}");
-
+            Console.WriteLine("         Ö Ğ R E N C İ N İ N ");
+            Console.WriteLine($"Ad Soyad : {ogrenci.ad} {ogrenci.soyAd}");
+            Console.WriteLine($"Okul Numarası : {ogrenci.ogrenciNo}");
+            
         }
     }
 }
