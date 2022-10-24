@@ -188,28 +188,29 @@ namespace OnSoruluSinavSistemi
                     Console.WriteLine($"{sorular[i].numara}-) {sorular[i].soru}");
                     Console.WriteLine($"{sorular[i].islem1s}-) {sorular[i].islem1}    {sorular[i].islem2s}-) {sorular[i].islem2}    {sorular[i].islem3s}-) {sorular[i].islem3}    {sorular[i].islem4s}-) {sorular[i].islem4}");
                     Console.WriteLine();
-                    
-                }
-                Console.WriteLine("Çözmek İstediğin Soruyu Tuşla");
-                secm = Convert.ToInt32(Console.ReadLine());
-                Console.Clear();
-               
-                if (secm == sorular[secm - 1].numara)
-                {
-                    Console.WriteLine($"{sorular[secm - 1].numara}-) {sorular[secm - 1].soru}");
-                    Console.WriteLine($"{sorular[secm - 1].islem1s}-) {sorular[secm - 1].islem1} {sorular[secm - 1].islem2s}-) {sorular[secm - 1].islem2} {sorular[secm - 1].islem3s}-) {sorular[secm - 1].islem3} {sorular[secm - 1].islem4s}-) {sorular[secm - 1].islem4}");
-                    Console.WriteLine("SİZCE DOĞRU CEVAP HANGİSİ ?");
-                    cevap = Console.ReadLine();
-                    string ToUpper;
-                    Console.Clear();
-                   
-                    if (cevap == sorular[secm - 1].dogruCevap)
+                    if (secm == sorular[secm - 1].numara)
                     {
-                        puan += puanHesap;
+                        Console.WriteLine($"{sorular[secm - 1].numara}-) {sorular[secm - 1].soru}");
+                        Console.WriteLine($"{sorular[secm - 1].islem1s}-) {sorular[secm - 1].islem1} {sorular[secm - 1].islem2s}-) {sorular[secm - 1].islem2} {sorular[secm - 1].islem3s}-) {sorular[secm - 1].islem3} {sorular[secm - 1].islem4s}-) {sorular[secm - 1].islem4}");
+                        Console.WriteLine("SİZCE DOĞRU CEVAP HANGİSİ ?");
+                        cevap = Console.ReadLine();
+                        string ToUpper;
+                        Console.Clear();
+                        Console.WriteLine("Çözmek İstediğin Soruyu Tuşla");
+                        secm = Convert.ToInt32(Console.ReadLine());
+                        Console.Clear();
+
+                        if (cevap == sorular[secm - 1].dogruCevap)
+                        {
+                            puan += puanHesap;
+                        }
+
+                        secm = 0;
                     }
-                   
-                   secm = 0;
                 }
+                
+               
+                
                 
 
             }
